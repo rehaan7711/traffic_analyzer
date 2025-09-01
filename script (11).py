@@ -1,4 +1,5 @@
-# 🚗 Traffic Analyzer Project
+# Create comprehensive README file
+readme_content = '''# 🚗 Traffic Analyzer Project
 
 **AI-Powered Traffic Video Analysis using YOLOv8 and OpenCV**
 
@@ -299,7 +300,7 @@ cd traffic-analyzer-project
 
 # Create virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # On Windows: venv\\Scripts\\activate
 
 # Install development dependencies
 pip install -r requirements.txt
@@ -374,3 +375,10 @@ python demo_script.py --video sample-traffic-video.mp4
 
 [![Star this repo](https://img.shields.io/github/stars/your-username/traffic-analyzer-project.svg?style=social&label=Star)](https://github.com/your-username/traffic-analyzer-project)
 [![Fork this repo](https://img.shields.io/github/forks/your-username/traffic-analyzer-project.svg?style=social&label=Fork)](https://github.com/your-username/traffic-analyzer-project/fork)
+'''
+
+with open('README.md', 'w') as f:
+    f.write(readme_content)
+
+print("README.md created successfully!")
+print(f"File size: {len(readme_content)} characters")
